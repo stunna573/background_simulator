@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background || simulator</title>
+</head>
+<body id="body">
+  <h3 id="yt">Ensure you enter valid color names.</h3>
+  <form action="" id="myForm">
+    <label for="back_ground">Enter background color:</label>
+    <input type="text" id="back_ground" value="grey"><br><br>
+    <label for="color">Enter your color:</label>
+    <input type="text" id="color" value="white"><br><br>
+    <label for="h3">Enter the header's color</label>
+    <input type="text" id="h3" value="brown"><br><br>
+    <input type="button" onclick="changeStyle()" value="Change">
+  </form>
+
+  <script>
+    alert("yoo")
+    function changeStyle(){
+    let page = document.getElementById('body');
+    let round = document.getElementById('back_ground').value;
+    let lor = document.getElementById('color').value;
+    let head = document.getElementById('h3').value;
+    let header = document.getElementById('yt')
+    page.style.background = round;
+    page.style.color = lor;
+    header.style.color = head;
+   };
+
+  </script>
+
+</body>
+</html>
+
